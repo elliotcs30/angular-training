@@ -452,6 +452,35 @@
     </a>
   </div>
 
+  <!-- test -->
+  <style>
+    legend {
+      background-color: #000;
+      color: #fff;
+      padding: 3px 6px;
+    }
+
+    input {
+      margin: 0.4rem;
+    }
+  </style>
+
+  <form action="">
+    <fieldset [disabled]="true ? null : 'disabled'">
+      <legend>Choose your favorite monster</legend>
+
+      <input type="radio" id="kraken" name="monster" value="K">
+      <label for="kraken">Kraken</label><br>
+
+      <input type="radio" id="sasquatch" name="monster" value="S">
+      <label for="sasquatch">Sasquatch</label><br>
+
+      <input type="radio" id="mothman" name="monster" value="M">
+      <label for="monthman">Mothman</label>
+    </fieldset>
+  </form>
+  <!-- test -->
+
   <!-- Footer -->
   <footer>
       Love Angular?&nbsp;
