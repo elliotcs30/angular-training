@@ -25,4 +25,7 @@ export class ProductListComponent {
   onSetFontSize(value: number): void {
     this.fontSize += value;
   }
+
+  // style binding
+  fontColor = 'red';
 }

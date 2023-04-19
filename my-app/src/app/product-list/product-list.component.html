@@ -23,3 +23,9 @@ Hello World, {{ name }}
   減少 1 pt
 </button>
 <p>目前文字尺寸: {{ fontSize }}</p>
+
+<h3>樣式繫節 (Style Binding)</h3>
+<p [style.fontSize.pt]="fontSize">
+  目前文字尺寸: {{ fontSize }} pt
+</p>
+<p [style]="{ fontSize: fontSize + ' pt', color: fontColor }">...</p>
