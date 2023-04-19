@@ -1,0 +1,15 @@
+<p>product-list works!</p>
+
+<div *ngFor="let product of products">
+  <h3>
+    {{ product.name }}
+  </h3>
+</div>
+
+<h3>將屬性值顯示在頁面上</h3>
+Hello World, {{ name }}
+<hr>
+<h3>購物車訂購金額計算</h3>
+<div>產品單價: {{ unitPrice }}</div>
+<div>訂購數量: {{ purchaseCount }}</div>
+<div>金額小計: {{ unitPrice * purchaseCount }}</div>
