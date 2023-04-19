@@ -13,3 +13,13 @@ Hello World, {{ name }}
 <div>產品單價: {{ unitPrice }}</div>
 <div>訂購數量: {{ purchaseCount }}</div>
 <div>金額小計: {{ unitPrice * purchaseCount }}</div>
+
+<h3>事件繫節 (Event Binding)</h3>
+<p>&lt;any-tag&gt; (事件名稱)="方法" &lt;/any-tag&gt;</p>
+<button type="button" (click)="onSetFontSize(1)">
+  增加 1 pt
+</button>
+<button type="button" (click)="onSetFontSize(-1)">
+  減少 1 pt
+</button>
+<p>目前文字尺寸: {{ fontSize }}</p>

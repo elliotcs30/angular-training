@@ -18,4 +18,11 @@ export class ProductListComponent {
 
   purchaseCount = 10;
   unitPrice = 200;
+
+  // event binding
+  fontSize = 12;
+
+  onSetFontSize(value: number): void {
+    this.fontSize += value;
+  }
 }
