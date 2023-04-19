@@ -25,4 +25,11 @@ export class ProductListComponent {
   onSetFontSize(value: number): void {
     this.fontSize += value;
   }
+
+  // Property / Attribute binding
+  fontSize2 = 12;
+  
+  onSetFontSize2(value: number): void {
+    this.fontSize2 += value;
+  }
 }
