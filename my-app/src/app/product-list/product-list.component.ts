@@ -28,8 +28,11 @@ export class ProductListComponent {
 
   // Property / Attribute binding
   fontSize2 = 12;
-  
+
   onSetFontSize2(value: number): void {
     this.fontSize2 += value;
   }
+
+  // style binding
+  fontColor = 'red';
 }
