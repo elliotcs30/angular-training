@@ -28,4 +28,10 @@ export class ProductListComponent {
 
   // style binding
   fontColor = 'red';
+
+  // class binding
+  fontSizeType = 'small';
+  get fontClass(): string {
+    return `${this.fontSizeType}-font`;
+  }
 }

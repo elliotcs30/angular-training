@@ -29,3 +29,11 @@ Hello World, {{ name }}
   目前文字尺寸: {{ fontSize }} pt
 </p>
 <p [style]="{ fontSize: fontSize + ' pt', color: fontColor }">...</p>
+
+<h3>類別繫節 (Class Binding)</h3>
+<button type="button" (click)="fontSizeType = 'small'">小</button>
+<button type="button" (click)="fontSizeType = 'middle'">中</button>
+<button type="button" (click)="fontSizeType = 'biggest'">大</button>
+<p [class]="fontClass">
+  目前文字樣式：{{ fontClass }}
+</p>
