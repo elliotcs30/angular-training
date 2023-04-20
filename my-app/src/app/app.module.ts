@@ -5,11 +5,13 @@ import { ReactiveFormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { FontSizeComponent } from './font-size/font-size.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductListComponent,
+    FontSizeComponent,
   ],
   imports: [
     BrowserModule,
@@ -21,4 +23,4 @@ import { ProductListComponent } from './product-list/product-list.component';
   providers: [],
   bootstrap: [AppComponent]
 })
-export class AppModule { }
+export class AppModule {}
