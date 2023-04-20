@@ -24,6 +24,19 @@ Hello World, {{ name }}
 </button>
 <p>目前文字尺寸: {{ fontSize }}</p>
 
+<h3>屬性細節 (Property / Attribute Binding)</h3>
+<button type="button"
+        [disabled]="fontSize2 === 16"
+        (click)="onSetFontSize2(1)">
+  增加 1 pt
+</button>
+<button type="button"
+        [disabled]="fontSize2 === 10"
+        (click)="onSetFontSize2(-1)">
+  減少 1 pt
+</button>
+<p>目前文字尺寸: {{ fontSize2 }}</p>
+
 <h3>樣式繫節 (Style Binding)</h3>
 <p [style.fontSize.pt]="fontSize">
   目前文字尺寸: {{ fontSize }} pt
