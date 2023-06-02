@@ -1,1 +1,16 @@
 <p>employee works!</p>
+<div>Hello World, {{ name }}</div>
+
+<div>產品單價：{{ unitPrice }}</div>
+<div>訂購數量：{{ purchaseCount }}</div>
+<div>金額小計：{{ unitPrice * purchaseCount }}</div>
+
+<button type="button" [disabled]="fontSize === 16" (click)="onSetFontSize(1)">
+  增加1
+</button>
+
+<button type="button" [disabled]="fontSize === 10" (click)="onSetFontSize(-1)">
+  減少1
+</button>
+
+<p>目前尺寸：{{ fontSize }}</p>
