@@ -462,8 +462,10 @@
   <!--  <app-font-size [size]="fontSize" (sizeChange)="onSizeChange($event)"></app-font-size>-->
   <!--  <p [style.fontSize.pt]="fontSize">目前文字尺寸：{{ fontSize }} pt</p>-->
   <!--  <p>目前p文字尺寸：{{ pFontSize }} pt</p>-->
-  <app-font-size2 [(size2)]="fontSize2"></app-font-size2>
-  <p [style.fontSize2.pt]="fontSize2">目前文字尺寸: {{ fontSize2 }}</p>
+  <!--  <app-font-size2 [(size2)]="fontSize2"></app-font-size2>-->
+  <!--  <p [style.fontSize2.pt]="fontSize2">目前文字尺寸: {{ fontSize2 }}</p>-->
+  <app-font-size3 #fontSize3></app-font-size3>
+  <p [style.fontSize3.pt]="fontSize3.size3">目前文字尺寸: {{ fontSize3.size3 }} pt</p>
 
   <!-- add training code  end -->
 

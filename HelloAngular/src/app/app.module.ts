@@ -6,13 +6,15 @@ import { AppComponent } from './app.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FontSizeComponent } from './font-size/font-size.component';
 import { FontSize2Component } from './font-size2/font-size2.component';
+import { FontSize3Component } from './font-size3/font-size3.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     EmployeeComponent,
     FontSizeComponent,
-    FontSize2Component
+    FontSize2Component,
+    FontSize3Component
   ],
   imports: [
     BrowserModule,
