@@ -466,7 +466,18 @@
   <!--  <p [style.fontSize2.pt]="fontSize2">目前文字尺寸: {{ fontSize2 }}</p>-->
   <app-font-size3 #fontSize3></app-font-size3>
   <p [style.fontSize3.pt]="fontSize3.size3">目前文字尺寸: {{ fontSize3.size3 }} pt</p>
+  <hr/>
 
+  <h1>ng-template</h1>
+  <p>Before ng-template</p>
+  <div *ngTemplateOutlet="sample"></div>
+  <div *ngTemplateOutlet="sample; context: {desc: 'first div'}"></div>
+  <div *ngTemplateOutlet="sample; context: {desc: 'second div'}"></div>
+  <p>After ng-template</p>
+
+  <ng-template #sample let-desc="desc">
+    <p>Hello World with ng-template - {{ desc }}</p>
+  </ng-template>
   <!-- add training code  end -->
 
   <!-- Footer -->
