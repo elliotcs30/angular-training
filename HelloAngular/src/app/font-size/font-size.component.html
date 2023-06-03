@@ -1,0 +1,18 @@
+<p>font-size works!</p>
+
+<div>{{size}}</div>
+<div>{{pSize}}</div>
+
+<button type="button" [disabled]="size === 16" (click)="onSetFontSize(1)">
+  增加 1 pt
+</button>
+<button type="button" [disabled]="size === 10" (click)="onSetFontSize(-1)">
+  減少 1 pt
+</button>
+
+<button type="button" [disabled]="pSize === 20" (click)="onSetSubFontSize(1)">
+  孩子增加 1 pt
+</button>
+<button type="button" [disabled]="pSize === 5" (click)="onSetSubFontSize(-1)">
+  孩子減少 1 pt
+</button>

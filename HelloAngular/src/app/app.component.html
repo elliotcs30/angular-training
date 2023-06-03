@@ -455,6 +455,14 @@
   <!-- add training code -->
   <h1>This is component</h1>
   <app-employee></app-employee>
+
+  <h1>Font Size</h1>
+  <app-font-size [pSize]="pFontSize" (subSizeChange)="onMyselfSizeChange($event)"></app-font-size>
+  <!--  只能選擇一個 app-font-size 來使用-->
+  <!--  <app-font-size [size]="fontSize" (sizeChange)="onSizeChange($event)"></app-font-size>-->
+  <p [style.fontSize.pt]="fontSize">目前文字尺寸：{{ fontSize }} pt</p>
+  <p>目前p文字尺寸：{{ pFontSize }} pt</p>
+
   <!-- add training code  end -->
 
   <!-- Footer -->
