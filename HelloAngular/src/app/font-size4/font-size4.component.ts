@@ -1,4 +1,4 @@
-import { Component, OnChanges } from '@angular/core';
+import { Component, EventEmitter, Input, Output, OnChanges } from '@angular/core';
 
 @Component({
   selector: 'app-font-size4',
@@ -6,6 +6,9 @@ import { Component, OnChanges } from '@angular/core';
   styleUrls: ['./font-size4.component.css']
 })
 export class FontSize4Component {
+  @Input() name!: string;
+  @Output() nameChange = new EventEmitter<string>();
+
   fontSizeType = 'small';
 
   get fontClass(): string {
