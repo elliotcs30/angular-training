@@ -478,6 +478,13 @@
   <ng-template #sample let-desc="desc">
     <p>Hello World with ng-template - {{ desc }}</p>
   </ng-template>
+
+  <h1>ng-template ($implicit)</h1>
+  <div *ngTemplateOutlet="sample2; context: {$implicit: 'first div'}"></div>
+  <div *ngTemplateOutlet="sample2; context: {$implicit: 'second div'}"></div>
+  <ng-template #sample2 let-desc>
+    <p>Hello World with ng-template - {{ desc }}</p>
+  </ng-template>
   <!-- add training code  end -->
 
   <!-- Footer -->
