@@ -1,0 +1,7 @@
+<p>font-size4 works!</p>
+
+<button type="button" (click)="fontSizeType = 'small'">小</button>
+<button type="button" (click)="fontSizeType = 'middle'">中</button>
+<button type="button" (click)="fontSizeType = 'biggest'">大</button>
+
+<p [class]="fontClass">目前文字樣式: {{ fontClass }}</p>
